@@ -139,6 +139,8 @@ curl.exe -u "$env:VAULT_USERNAME`:$env:VAULT_PASSWORD" https://example.com/api
 - 作者：小马大大哥哥
 - 许可证：MIT（允许使用、修改、再分发；保留版权与许可证声明；不提供担保）
 - 源码：<https://github.com/qq601359558/dsh-password-vault>
+- Release：<https://github.com/qq601359558/dsh-password-vault/releases/tag/v1.1.0>
+- DSH 发现索引：<https://raw.githubusercontent.com/qq601359558/dsh-password-vault/main/index.json>
 - 上架打包说明见 [PUBLISH.md](PUBLISH.md)
 
 ## 开发与测试

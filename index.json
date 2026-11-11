@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Xiao Ma's DSH plugins",
+    "zh": "小马大大的 DSH 插件"
+  },
+  "description": {
+    "en": "Plugins maintained by 小马大大哥哥.",
+    "zh": "小马大大哥哥维护的 DSH 插件。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-password-vault",
+      "title": {
+        "en": "Password vault",
+        "zh": "账号密码库"
+      },
+      "description": {
+        "en": "Encrypted local accounts that the agent can use without seeing passwords.",
+        "zh": "本地加密保存账号密码，AI 可通过租约直接使用，但看不到明文。"
+      },
+      "icon": "https://raw.githubusercontent.com/qq601359558/dsh-password-vault/main/icon.svg",
+      "author": "小马大大哥哥",
+      "homepage": "https://github.com/qq601359558/dsh-password-vault#readme",
+      "repository": {
+        "url": "https://github.com/qq601359558/dsh-password-vault"
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794410406,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/qq601359558/dsh-password-vault",
+            "commit": "329a8dcd78a61f09c32b5636980144dd1b51e57f"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

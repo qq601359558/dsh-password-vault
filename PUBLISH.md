@@ -58,7 +58,15 @@ dsh plugin --profile <name> add dsh-password-vault
 
 ## 4. 发布到官方 Discover 索引
 
-DSH 没有内置中心商城，需要你提供一个静态索引 JSON，例如：
+仓库根目录已经带了 `index.json`。DSH 的 **插件 → 发现 → 添加索引源** 可以填：
+
+```text
+https://raw.githubusercontent.com/qq601359558/dsh-password-vault/main/index.json
+```
+
+如果 raw.githubusercontent.com 访问不稳定，可以把 `index.json` 和 `icon.svg` 放到 GitHub Pages / 任意 HTTPS 静态站点，使用自己的 URL。
+
+索引内容示例：
 
 ```json
 {
