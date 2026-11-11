@@ -1,0 +1,64 @@
+{
+  "name": "dsh-password-vault",
+  "version": "1.1.0",
+  "description": "Encrypted local account and password vault with secret-free AI tools",
+  "author": "小马大大哥哥",
+  "license": "MIT",
+  "homepage": "https://github.com/qq601359558/dsh-password-vault#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq601359558/dsh-password-vault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qq601359558/dsh-password-vault/issues"
+  },
+  "type": "module",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "password-manager",
+    "credential-vault",
+    "security"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "scripts": {
+    "test": "node --test test/vault.test.mjs",
+    "check:store": "node scripts/check-store.mjs",
+    "pack:store": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-store.ps1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/vault.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "PUBLISH.md",
+    "LICENSE",
+    "plugin.json",
+    "dsh.plugin.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  }
+}

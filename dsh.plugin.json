@@ -1,0 +1,35 @@
+{
+  "id": "dsh-password-vault",
+  "name": "dsh-password-vault",
+  "displayName": "账号密码库",
+  "version": "1.1.0",
+  "description": "本地加密保存账号密码，AI 可通过租约直接使用，但看不到明文。",
+  "author": "小马大大哥哥",
+  "license": "MIT",
+  "homepage": "https://github.com/qq601359558/dsh-password-vault#readme",
+  "repository": {
+    "url": "https://github.com/qq601359558/dsh-password-vault"
+  },
+  "platform": "desktop-exe",
+  "harnessVersion": ">=0.2.2-rc.1 <0.3.0",
+  "entry": "index.js",
+  "main": "index.js",
+  "client": "client.js",
+  "icon": "icon.svg",
+  "permissions": [
+    "本地凭据加密存储",
+    "AI 工具读取凭据元数据",
+    "AI 工具通过租约使用凭据",
+    "执行本地命令（默认关闭，需用户显式开启）",
+    "访问用户允许的主机",
+    "客户端设置页与录入弹窗"
+  ],
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "password-manager",
+    "credential-vault",
+    "security"
+  ],
+  "category": "security"
+}

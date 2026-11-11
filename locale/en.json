@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "title": "Password vault",
+    "description": "Encrypted local accounts that the agent can use without seeing passwords."
+  },
+  "nav": "Password vault",
+  "title": "Password vault"
+}

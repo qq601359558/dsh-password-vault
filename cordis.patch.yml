@@ -1,0 +1,6 @@
+- insert:
+    - id: password-vault
+      name: dsh-password-vault
+      config:
+        leaseMinutes: 10
+        autoLockMinutes: 30
